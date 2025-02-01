@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
      <head>
         <meta charset="utf-8" />
         <title>Formulario</title>
@@ -11,26 +11,34 @@
                 <header>
                     <h1>Formulario de Registro</h1>
                 </header>
-                <hr>
+            </div>
 
-                <form>
-                    <label>Nombre de Usuario</label>
-                    <input type="text" placeholder="Nombre"> <br/>
+                
+                <form id="formularioRe">
+                    <div>
+                    <label for="username">Usuario</label>
+                    <input type="text" placeholder="Nombre del usuario" id="username"> <br/>
 
-                    <label>Email</label>
-                    <input type="email" placeholder="Email"> <br/>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder=" example@gmail.com" id="email"> <br/>
 
-                    <label>Contraseña</label>
-                    <input type="password" placeholder="Contraseña"> <br/>                 
+                    <label for="password">Contraseña</label>
+                    <input type="password" placeholder="Minimo 8 caracteres, 1 Mayuscula, 1 caracter especial" id="password"> <br/>                 
                     
-                    <input type="submit" value="Registrase"/><br/>
+                </div>
+                <div>
+                    <button type="submit" id="submit">Registrase</button>
+                </div>
                 </form>
+
 
                 <nav>
                     <a href="index.html">
                         inciar sesión
                 </nav>
                 
+                <script src="main.js"></script>
+
                 <footer>
                     Nathalie Miranda WEB &COPY;2025
                 </footer>
