@@ -1,37 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
      <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8">
         <title>Formulario</title>
-       <link rel="stylesheet" href="estilos.css"/>
+
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f7f9fc;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+    
+            #container {
+                width: 100%;
+                max-width: 600px;
+                background-color: #fff;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                text-align: center;
+            }
+    
+            h1 {
+                color: #333;
+                margin-bottom: 20px;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+    
+            input[type="text"], input[type="email"], input[type="password"] {
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+    
+            button {
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+    
+            button:hover {
+                background-color: #0056b3;
+            }
+    
+            nav {
+                margin-top: 10px;
+            }
+    
+            nav a {
+                text-decoration: none;
+                color: #007bff;
+            }
+    
+            nav a:hover {
+                text-decoration: underline;
+            }
+    
+            footer {
+                margin-top: 20px;
+                color: #aaa;
+            }
+        </style>
      </head>
      <body>
-            
+        
             <div id="container">
                 <header>
-                    <h1>Bienvenido Usuario</h1>
+                    <h1>Formulario de Registro</h1>
                 </header>
-                <hr>
+            </div>
 
-                <h1>Usuarios Registrados</h1>
-                <table border="1">
-                    <tr>
-                    <td>Nombre</td> 
-                    <td>Email</td>
-                    <td>Contraseña</td>
-
-                    </tr>
-
-                    <tr>
-                        <td>Nathalie</td> 
-                        <td>nahvbaub@jsdvbdsc</td>
-                        <td>noserbthbs</td>
-
-                    </tr>
-                </table>
-
-               
                 
+                <form id="miFormulario">
+                     <label for="username">Usuario</label>  
+                    <input type="text" placeholder="Nombre del usuario" name="username"> 
+
+                    <label for="email">Email</label>
+                    <input type="email" placeholder=" example@gmail.com" name="email"> 
+
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Minimo 8 caracteres, 1 Mayuscula, 1 caracter especial" name="password">   
+
+                    <button type="submit" id="submit">Registrase</button>
+
+                </form>
+                <div id="respuesta">
+                    
+
+                </div>
+
+                
+                <script src="main.js"></script>
+
+            <div>
                 <footer>
                     Nathalie Miranda WEB &COPY;2025
                 </footer>
